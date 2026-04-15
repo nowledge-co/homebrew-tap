@@ -1,13 +1,13 @@
 cask "con-beta" do
-  version "0.1.0-beta.14"
+  version "0.1.0-beta.19"
 
   on_arm do
-    sha256 "6f4b9e6ded5a0d7a1aa75039c4f2f2ace2427bb2a866cec26baaa457d582beab"
+    sha256 "c6e23cbf84749cca009a324210d6b8907370bd1442ed1be1d4f649d706cbf595"
     url "https://github.com/nowledge-co/con/releases/download/v#{version}/con-Beta-#{version}-macos-arm64.dmg"
   end
 
   on_intel do
-    sha256 "2dcc5206182931dde4d89cdac649ceb02e5b88af072f3fcb1fb9a3b6504d2df5"
+    sha256 "7172d477ee5383979ada577762761a9e7403064703789cd6aaf403faf557511e"
     url "https://github.com/nowledge-co/con/releases/download/v#{version}/con-Beta-#{version}-macos-x86_64.dmg"
   end
 
@@ -16,9 +16,9 @@ cask "con-beta" do
   homepage "https://github.com/nowledge-co/con"
 
   livecheck do
-    url "https://github.com/nowledge-co/con/releases?q=prerelease%3Atrue"
-    regex(/v?(\d+(?:\.\d+)*-beta\.\d+)/i)
-    strategy :page_match
+    url :url
+    strategy :github_latest
+    regex(/v?(\d+(?:\.\d+)*(?:-beta\.\d+)?)/i)
   end
 
   auto_updates true
