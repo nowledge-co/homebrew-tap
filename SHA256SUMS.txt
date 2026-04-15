@@ -1,2 +1,0 @@
-ea23b3a3a9a02f11f6fb4f7e930c9b4f344cac73ead512fd00beb6c430c96ff5  con-Beta-0.1.0-beta.14-macos-x86_64.zip
-2dcc5206182931dde4d89cdac649ceb02e5b88af072f3fcb1fb9a3b6504d2df5  con-Beta-0.1.0-beta.14-macos-x86_64.dmg
