@@ -1,19 +1,19 @@
 cask "con-beta" do
-  version "0.1.0-beta.24"
+  version "0.1.0-beta.30"
 
   on_arm do
-    sha256 "d077c6febb5957653c0a1a9d8ce74ee72b7f8f77852a92aa95c7c86a4f852d5a"
-    url "https://github.com/nowledge-co/con/releases/download/v#{version}/con-Beta-#{version}-macos-arm64.dmg"
+    sha256 "40293aee58cf89807b9c4574fca08bdb84b0ff4eb87e2c41e89aa866dc505562"
+    url "https://github.com/nowledge-co/con-terminal/releases/download/v#{version}/con-Beta-#{version}-macos-arm64.dmg"
   end
 
   on_intel do
-    sha256 "8258dae218aef1d5f04a7eaf23a2894f3f0ba101a9b96259791a39d389640a7f"
-    url "https://github.com/nowledge-co/con/releases/download/v#{version}/con-Beta-#{version}-macos-x86_64.dmg"
+    sha256 "7aa33db54feaa65617df4353ad7273dbecd079b3e17bae0ef05f1085423690c9"
+    url "https://github.com/nowledge-co/con-terminal/releases/download/v#{version}/con-Beta-#{version}-macos-x86_64.dmg"
   end
 
   name "con Beta"
   desc "GPU-accelerated terminal emulator with built-in AI agent"
-  homepage "https://github.com/nowledge-co/con"
+  homepage "https://github.com/nowledge-co/con-terminal"
 
   livecheck do
     url :url
