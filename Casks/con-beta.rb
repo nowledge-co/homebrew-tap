@@ -22,7 +22,7 @@ cask "con-beta" do
   end
 
   auto_updates true
-  depends_on macos: ">= :catalina"
+  depends_on macos: :catalina
 
   app "con Beta.app"
   binary "#{appdir}/con Beta.app/Contents/MacOS/con-cli", target: "con-cli"
