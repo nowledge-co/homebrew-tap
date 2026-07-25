@@ -1,13 +1,13 @@
 cask "con-beta" do
-  version "0.1.0-beta.78"
+  version "0.1.0-beta.79"
 
   on_arm do
-    sha256 "c3b626f6fae580231f0e454c30ba98ad3e97caf803d8a80cb3d6b791a35a4e3c"
+    sha256 "a6a48c5beae6f9c9a21fa34041479093acf5e8e55a5a0822bdcd56e479f44006"
     url "https://github.com/nowledge-co/con-terminal/releases/download/v#{version}/con-Beta-#{version}-macos-arm64.dmg"
   end
 
   on_intel do
-    sha256 "489a712181bdd34c6e8492adcf84f418c293406fcc8c0ac700432734d0e22a58"
+    sha256 "f5fe647870b5e1ef79149cb54eceaae350d68f851b91b3dc294b4ed36190caba"
     url "https://github.com/nowledge-co/con-terminal/releases/download/v#{version}/con-Beta-#{version}-macos-x86_64.dmg"
   end
 
@@ -22,7 +22,7 @@ cask "con-beta" do
   end
 
   auto_updates true
-  depends_on macos: :catalina
+  depends_on macos: ">= :catalina"
 
   app "con Beta.app"
   binary "#{appdir}/con Beta.app/Contents/MacOS/con-cli", target: "con-cli"
